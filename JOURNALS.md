@@ -6,6 +6,8 @@
 
 🌐 [Searchable website](https://anwarul-islam-aion.github.io/ieee-conference-journal-tracker/journals/) &nbsp;·&nbsp; 📥 [Excel](docs/IEEE_Journals_APC.xlsx) · [CSV](docs/journals.csv) · [JSON](docs/journals.json) · [YAML](data/journals.yml) &nbsp;·&nbsp; ✍️ [Add or fix a journal](CONTRIBUTING.md#journals) &nbsp;·&nbsp; 📅 [Conference deadlines](README.md)
 
+🔎 **Find a journal for your abstract:** [IEEE Publication Recommender](https://publication-recommender.ieee.org/home) · [Wiley Journal Finder](https://www.wiley.com/en-us/journal-finder/abstract) · [Elsevier JournalFinder](https://journalfinder.elsevier.com) · [Springer journals](https://link.springer.com/journals)
+
 > Prices are IEEE's 2026 list prices, last checked **2026-10-16**. Only **15 of 174** journals have a published time to first decision — help fill in the rest!
 
 ## How IEEE charges in 2026

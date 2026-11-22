@@ -87,6 +87,10 @@ nav.pages a[aria-current] { background: var(--accent); border-color: var(--accen
 .stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 16px; }
 .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; }
 .stat b { font-size: 1.25rem; margin-right: 4px; }
+.finders { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; margin: 0 0 12px; }
+.finders span { color: var(--muted); font-size: .9rem; margin-right: 4px; }
+.finders a { padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+  text-decoration: none; font-weight: 500; font-size: .9rem; }
 .filters { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; background: var(--surface);
   border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
 .filters label { display: flex; gap: 6px; align-items: center; color: var(--muted); font-size: .9rem; }
@@ -145,6 +149,7 @@ footer p { margin: 6px 0; }
 </header>
 <nav class="sections" aria-label="Sections"><a href="../">Conferences</a> <a href="../journals/" aria-current="page">Journals</a></nav>
 <div class="stats"><div class="stat"><b>$2,800</b> Hybrid</div><div class="stat"><b>$2,160</b> Fully open access</div><div class="stat"><b>$2,995</b> Hybrid magazine</div><div class="stat"><b id="n-shown">217</b> shown</div></div>
+<div class="finders"><span>Find a journal for your abstract:</span> <a href="https://publication-recommender.ieee.org/home" rel="noopener">IEEE Publication Recommender</a> <a href="https://www.wiley.com/en-us/journal-finder/abstract" rel="noopener">Wiley Journal Finder</a> <a href="https://journalfinder.elsevier.com" rel="noopener">Elsevier JournalFinder</a> <a href="https://link.springer.com/journals" rel="noopener">Springer journals</a></div>
 <div class="filters" role="search">
 <input type="search" id="f-q" placeholder="Search journal name or acronym…" aria-label="Search">
 <label>Track <select id="f-track"><option value="">All</option><option value="Aerospace, Radar &amp; Navigation">Aerospace, Radar &amp; Navigation</option><option value="Communications &amp; Networking">Communications &amp; Networking</option><option value="Signal, Image &amp; Speech Processing">Signal, Image &amp; Speech Processing</option><option value="AI, Computing &amp; Software">AI, Computing &amp; Software</option><option value="Antennas, Microwaves &amp; EM">Antennas, Microwaves &amp; EM</option><option value="Photonics, Quantum &amp; Plasma">Photonics, Quantum &amp; Plasma</option><option value="Geoscience, Remote Sensing &amp; Ocean">Geoscience, Remote Sensing &amp; Ocean</option><option value="Circuits, Devices &amp; Semiconductors">Circuits, Devices &amp; Semiconductors</option><option value="Power, Energy &amp; Industrial Electronics">Power, Energy &amp; Industrial Electronics</option><option value="Control, Robotics &amp; Systems">Control, Robotics &amp; Systems</option><option value="Vehicles &amp; Transportation">Vehicles &amp; Transportation</option><option value="Instrumentation, Sensors &amp; Measurement">Instrumentation, Sensors &amp; Measurement</option><option value="Biomedical &amp; Health">Biomedical &amp; Health</option><option value="Multidisciplinary, Education &amp; Society">Multidisciplinary, Education &amp; Society</option></select></label>

@@ -64,6 +64,14 @@ PAGES = {
 STATUS_ORDER = {"open": 0, "tba": 1, "closed": 2, "past": 3}
 
 SECTIONS = (("", "Conferences"), ("journals", "Journals"))
+
+# Publisher tools that suggest journals for a title or abstract (shown on the Journals page and in JOURNALS.md)
+FINDERS = (
+    ("IEEE Publication Recommender", "https://publication-recommender.ieee.org/home"),
+    ("Wiley Journal Finder", "https://www.wiley.com/en-us/journal-finder/abstract"),
+    ("Elsevier JournalFinder", "https://journalfinder.elsevier.com"),
+    ("Springer journals", "https://link.springer.com/journals"),
+)
 CONF_TABS = (("", "All IEEE"), ("aess", "AESS"))
 
 REGIONS = {
@@ -507,6 +515,10 @@ nav.pages a[aria-current] { background: var(--accent); border-color: var(--accen
 .stats { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 16px; }
 .stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 8px 14px; }
 .stat b { font-size: 1.25rem; margin-right: 4px; }
+.finders { display: flex; flex-wrap: wrap; gap: 6px 8px; align-items: center; margin: 0 0 12px; }
+.finders span { color: var(--muted); font-size: .9rem; margin-right: 4px; }
+.finders a { padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+  text-decoration: none; font-weight: 500; font-size: .9rem; }
 .filters { display: flex; flex-wrap: wrap; gap: 10px 16px; align-items: center; background: var(--surface);
   border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-bottom: 12px; }
 .filters label { display: flex; gap: 6px; align-items: center; color: var(--muted); font-size: .9rem; }
@@ -966,6 +978,8 @@ def build_journals_md(pricing: dict, journals: list[dict]) -> str:
 
 🌐 [Searchable website]({SITE_URL}/journals/) &nbsp;·&nbsp; 📥 [Excel](docs/IEEE_Journals_APC.xlsx) · [CSV](docs/journals.csv) · [JSON](docs/journals.json) · [YAML](data/journals.yml) &nbsp;·&nbsp; ✍️ [Add or fix a journal](CONTRIBUTING.md#journals) &nbsp;·&nbsp; 📅 [Conference deadlines](README.md)
 
+🔎 **Find a journal for your abstract:** {" · ".join(f"[{n}]({u})" for n, u in FINDERS)}
+
 > Prices are IEEE's {year} list prices, last checked **{pricing.get('verified', '')}**. Only **{with_time} of {len(regular)}** journals have a published time to first decision — help fill in the rest!
 
 ## How IEEE charges in {year}
@@ -1011,6 +1025,7 @@ def build_journals_page(pricing: dict, journals: list[dict]) -> str:
     desc = (f"All main IEEE journals and magazines grouped by track, with hybrid or fully open-access model, "
             f"{year} APC, society-member price and average time to first decision.")
     canonical = f"{SITE_URL}/journals/"
+    finders = "".join(f' <a href="{h(u)}" rel="noopener">{h(n)}</a>' for n, u in FINDERS)
     tracks = j_tracks(journals)
     track_opts = "".join(f'<option value="{h(t)}">{h(t)}</option>' for t in tracks)
     model_opts = "".join(f'<option value="{h(m)}">{h(m)}</option>' for m in models)
@@ -1089,6 +1104,7 @@ def build_journals_page(pricing: dict, journals: list[dict]) -> str:
 </header>
 <nav class="sections" aria-label="Sections">{nav_html("journals")}</nav>
 <div class="stats">{rules}<div class="stat"><b id="n-shown">{len(journals)}</b> shown</div></div>
+<div class="finders"><span>Find a journal for your abstract:</span>{finders}</div>
 <div class="filters" role="search">
 <input type="search" id="f-q" placeholder="Search journal name or acronym…" aria-label="Search">
 <label>Track <select id="f-track"><option value="">All</option>{track_opts}</select></label>
