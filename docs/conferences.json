@@ -1,28 +1,7 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "source": "https://github.com/anwarul-islam-aion/ieee-conference-journal-tracker",
   "conferences": [
-    {
-      "id": "icears-2027",
-      "acronym": "ICEARS 2027",
-      "url": "https://icears.com/2027/",
-      "city": "Thoothukudi, Tamil Nadu",
-      "country": "India",
-      "format": "Not stated",
-      "sources": [
-        "https://icears.com/2027/"
-      ],
-      "verified": "2026-11-21",
-      "name": "International Conference on Electronics and Renewable Systems",
-      "independent": true,
-      "venue": "St. Mother Theresa Engineering College",
-      "start": "2027-02-22",
-      "end": "2027-02-24",
-      "deadline": "2026-11-23",
-      "deadline_type": "full paper",
-      "deadline_note": "Extended from 9 Nov 2026. Acceptance 18 Dec 2026; registration 4 Jan 2027.",
-      "status": "open"
-    },
     {
       "id": "isstt-2027",
       "acronym": "ISSTT 2027",
@@ -2445,6 +2424,27 @@
       "deadline": "2026-10-16",
       "deadline_type": "full paper",
       "deadline_note": "Notification 24 Dec 2026; camera-ready 8 Jan 2027. 6 pages, IEEE format, double-blind.",
+      "status": "closed"
+    },
+    {
+      "id": "icears-2027",
+      "acronym": "ICEARS 2027",
+      "url": "https://icears.com/2027/",
+      "city": "Thoothukudi, Tamil Nadu",
+      "country": "India",
+      "format": "Not stated",
+      "sources": [
+        "https://icears.com/2027/"
+      ],
+      "verified": "2026-11-21",
+      "name": "International Conference on Electronics and Renewable Systems",
+      "independent": true,
+      "venue": "St. Mother Theresa Engineering College",
+      "start": "2027-02-22",
+      "end": "2027-02-24",
+      "deadline": "2026-11-23",
+      "deadline_type": "full paper",
+      "deadline_note": "Extended from 9 Nov 2026. Acceptance 18 Dec 2026; registration 4 Jan 2027.",
       "status": "closed"
     },
     {
