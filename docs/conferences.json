@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "source": "https://github.com/anwarul-islam-aion/ieee-conference-journal-tracker",
   "conferences": [
     {
@@ -1839,25 +1839,6 @@
       "status": "tba"
     },
     {
-      "id": "sdf-2026",
-      "acronym": "SDF 2026",
-      "url": "https://www.fkie.fraunhofer.de/en/events/sdf2026.html",
-      "city": "Bonn",
-      "country": "Germany",
-      "format": "Not stated",
-      "sources": [
-        "https://ieee-aess.org/ieee-aess-conference-deadlines"
-      ],
-      "verified": "2026-11-21",
-      "name": "Sensor Data Fusion: Trends, Solutions, Applications",
-      "organizers": "Fraunhofer FKIE · IEEE AESS",
-      "aess": true,
-      "start": "2026-11-23",
-      "end": "2026-11-25",
-      "deadline_passed": true,
-      "status": "closed"
-    },
-    {
       "id": "meae-2026",
       "acronym": "MEAE 2026",
       "url": "https://www.meae.org/",
@@ -2859,6 +2840,25 @@
       "venue": "IIUC",
       "start": "2026-11-08",
       "end": "2026-11-10",
+      "deadline_passed": true,
+      "status": "past"
+    },
+    {
+      "id": "sdf-2026",
+      "acronym": "SDF 2026",
+      "url": "https://www.fkie.fraunhofer.de/en/events/sdf2026.html",
+      "city": "Bonn",
+      "country": "Germany",
+      "format": "Not stated",
+      "sources": [
+        "https://ieee-aess.org/ieee-aess-conference-deadlines"
+      ],
+      "verified": "2026-11-21",
+      "name": "Sensor Data Fusion: Trends, Solutions, Applications",
+      "organizers": "Fraunhofer FKIE · IEEE AESS",
+      "aess": true,
+      "start": "2026-11-23",
+      "end": "2026-11-25",
       "deadline_passed": true,
       "status": "past"
     }
