@@ -1,30 +1,7 @@
 {
-  "updated": "2026-11-27",
+  "updated": "2026-11-28",
   "source": "https://github.com/anwarul-islam-aion/ieee-conference-journal-tracker",
   "conferences": [
-    {
-      "id": "isstt-2027",
-      "acronym": "ISSTT 2027",
-      "url": "https://www.isstt2027.org/",
-      "city": "Taipei",
-      "country": "Taiwan",
-      "format": "Not stated",
-      "sources": [
-        "https://www.mtt.org/mtt-s-sponsored-conferences/",
-        "https://ieeeaps.org/conferences/upcoming-conferences",
-        "https://www.isstt2027.org/"
-      ],
-      "verified": "2026-11-21",
-      "name": "International Symposium on Space Terahertz Technology",
-      "organizers": "IEEE MTT-S · IEEE AP-S",
-      "venue": "Academia Sinica",
-      "start": "2027-03-15",
-      "end": "2027-03-19",
-      "deadline": "2026-11-27",
-      "deadline_type": "abstract",
-      "deadline_note": "Notification 18 Dec 2026.",
-      "status": "open"
-    },
     {
       "id": "latiniot-2027",
       "acronym": "IEEE LatinIoT 2027",
@@ -2508,6 +2485,29 @@
       "start": "2027-03-15",
       "end": "2027-03-17",
       "deadline_passed": true,
+      "status": "closed"
+    },
+    {
+      "id": "isstt-2027",
+      "acronym": "ISSTT 2027",
+      "url": "https://www.isstt2027.org/",
+      "city": "Taipei",
+      "country": "Taiwan",
+      "format": "Not stated",
+      "sources": [
+        "https://www.mtt.org/mtt-s-sponsored-conferences/",
+        "https://ieeeaps.org/conferences/upcoming-conferences",
+        "https://www.isstt2027.org/"
+      ],
+      "verified": "2026-11-21",
+      "name": "International Symposium on Space Terahertz Technology",
+      "organizers": "IEEE MTT-S · IEEE AP-S",
+      "venue": "Academia Sinica",
+      "start": "2027-03-15",
+      "end": "2027-03-19",
+      "deadline": "2026-11-27",
+      "deadline_type": "abstract",
+      "deadline_note": "Notification 18 Dec 2026.",
       "status": "closed"
     },
     {
